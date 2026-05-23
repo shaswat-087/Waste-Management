@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    color: #293535;
+    height: 80px;
+    padding: 10px;
+    margin: 0;
+    background-color:#aaff00;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/** box2**/
+.navdeliver{
+    margin-left: 20px;
+}
+.navlocation{
+    display: flex;
+    text-align: center;
+    font-weight: 700;
+}
+.add-first{
+    color: #2a2424;
+    font-size: 16px;
+    margin-left: 23px;
+}
+.add-sec{
+    color: #2a2424;
+    font-size: 20px;
+    margin-left: 3px;
+}
+/**box3**/
+.navsearch{
+    display: flex;
+    width: 800px;
+    height: 45px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+}
+.search-input{
+    width: 690px;
+    height: 45px;
+    border: none;
+    font-size: 1.2rem;
+
+}
+
+.search-select{
+    height: 45px;
+    width: 60px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    color: black;
+}
+
+.search-icon{
+    height: 45px;
+    width: 50px;
+    background-color: rgba(230, 9, 142, 0.823);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.navsearch:hover{
+    border: 2px solid orange;
+}
+/**box45**/
+span{
+    font-size: 0.7rem;
+}
+.Account{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/**box6**/
+.navcart i {
+    font-size: 30px;
+}
+.navcart{
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    align-items: end;
+}
+/**panel**/
+.panel{
+    height: 40px;
+    background-color: #ffee00;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-opts{
+    width: 70%;
+}
+
+.panel-opts p {
+    display: inline;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.paneldeals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/**hero**/
+
+.herosection{
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP.N3YjF5KIooBAGFkdIBA82QHaEJ?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3");
+    width: cover;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.heromsg{
+    background-color: #e5fbb9;
+    color: #0f1111;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.heromsg a {
+    color: #2162A1;
+}
+
+.box{
+    background-color: white;
+    height:400px;
+    width: 23%;
+    border: 2px solid #333;   /* normal border */
+    border-radius: 20px;
+   
+}
+
+.shop-section{
+    justify-content: center;
+    height:450px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-img{
+    background-image: url("https://thumbs.dreamstime.com/b/three-modern-recycling-bins-park-setting-eco-friendly-waste-disposal-containers-yellow-green-modern-recycling-bins-yellow-355315970.jpg");
+    background-size: cover;
+    height: 330px;
+    width: 90%;
+    margin-left: 20px;
+    
+}
+
+.img1{
+    background-image: url("https://cdn.shopify.com/s/files/1/0278/4860/5809/files/NitrileGloves-Web_480x480.jpg?v=1590845168");
+    background-size: cover;
+}
+
+.img2{
+    background-image: url("https://fusion.healthcare/wp-content/uploads/2020/09/N95-NIOSH-Mask-Fusion-Healthcare-PPE.png");
+    background-size: cover;
+}
+
+.img3{
+    background-size: cover;
+    background-image: url("https://cdn11.bigcommerce.com/s-5fz3abyf4b/images/stencil/1280w/e/0054777_gg910-white.1__42762.original.jpg");
+}
+
+.img4{
+    background-image: url("https://cpimg.tistatic.com/10394687/b/5/Dettol-Soap.jpg");
+    background-size: cover;
+}
+
+.box{
+    align-content: center;
+    background-color: #fbfbfb;
+}
+
+.img{
+    height: 150px;
+    width: 150px;
+
+
+}
+
+.first2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.second2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img12{
+    background-image: url("https://image.made-in-china.com/2f0j00GYMkPRNsYgqr/Microfiber-Flat-Mop-Stainless-Steel-Handle-with-Washable-Mop-Pads.jpg");
+    background-size: cover;
+}
+
+.img22{
+    background-image: url("https://m.media-amazon.com/images/I/71fK1jmkZ2L._SX679_.jpg");
+    background-size: cover;
+}
+
+.img32{
+    background-size: cover;
+    background-image: url("https://m.media-amazon.com/images/I/71BF5g2QkQL._SL1000_.jpg");
+}
+
+.img42{
+    background-image: url("https://m.media-amazon.com/images/I/51XbcOsETJL.jpg");
+    background-size: cover;
+}
+
+h3{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.see-more{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.img13{
+    background-image: url("https://m.media-amazon.com/images/I/81F4Di57UCL._AC_SS450_.jpg");
+    background-size: cover;
+}
+
+.img23{
+    background-image: url("https://m.media-amazon.com/images/I/81KNsD1lqUL.jpg");
+    background-size: cover;
+}
+
+.img33{
+    background-size: cover;
+    background-image: url("https://plantcare.co.in/wp-content/uploads/2024/04/01-5.jpeg");
+}
+
+.img43{
+    background-image: url("https://images.thdstatic.com/productImages/6ab380ae-ce47-431c-a4bd-3166a7e47c47/svn/justincity-compost-accessories-327ph03328d-64_600.jpg");
+    background-size: cover;
+}
+
+.img14{
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP._pl2suKPdd2QbsDCjYIsVgHaHa?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: cover;
+}
+
+.img24{
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.oN2DHFn9596YTkBYGsKOXQHaHi?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: cover;
+}
+
+.img34{
+    background-size: cover;
+    background-image: url("https://bioratechnologies.com/wp-content/uploads/2022/10/Insect-Rearing_ApplicationPage-product-images-768x678.jpg");
+}
+
+.img44{
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP.qSgr8Kx3O9ZSuba_0d5_NgHaIW?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: cover;
+}
+
+.img15{
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP.qgU1l59u4hjeBtCB3vL2YwHaE5?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: cover;
+}
+
+.img25{
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP.pxuAhjkH1FHShmC0EGBkRAHaHa?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: cover;
+}
+
+.img35{
+    background-size: cover;
+    background-image: url("https://www.merit.com/wp-content/uploads/2021/02/Custom_Procedure.png");
+}
+
+.img45{
+    background-image: url("https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/cdn-ecommerce/store_01JNN7B3ACVX6J2X9TZPVXEHWS/assets/1744880921219-store_01JNN7B3ACVX6J2X9TZPVXEHWS%252Fassets%252F1744880900278-general_spill_kit_saudi_arabia_dammam_riyadh_jeddah_neom.jpg");
+    background-size: cover;
+}
+
+.img17{
+    background-image: url("https://thf.bing.com/th?id=OPAC.5%2fvGMQXAaIK90A474C474&w=592&h=550&o=5&dpr=1.5&pid=21.1");
+    background-size: cover;
+}
+
+.img27{
+    background-image: url("https://thf.bing.com/th/id/OPAC.NuiHTYHnf6PYRg474C474?w=592&h=550&o=5&dpr=1.5&pid=21.1");
+    background-size: cover;
+}
+
+.img37{
+    background-size: cover;
+    background-image: url("https://thf.bing.com/th/id/OPAC.156oENEfh5335g474C474?w=592&h=550&o=5&dpr=1.5&pid=21.1");
+}
+
+.img47{
+    background-image: url("https://thf.bing.com/th?id=OPAC.qg6Nnx8f%2f09rGg474C474&w=592&h=550&o=5&dpr=1.5&pid=21.1");
+    background-size: cover;
+}
+
+.box-img2{
+    background-image: url("https://i.pinimg.com/originals/d5/88/85/d588857c561ea1333c66fbc7343bb07e.jpg");
+    background-size: cover;
+    height: 330px;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.shop-bar{
+    width: 97%;
+    height: 350px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.images1{
+    background-image: url("");
+    background-size: cover;
+}
+.images2{
+    background-image: url("images/image2.jpg");
+    background-size: cover;
+}
+.images3{
+    background-image: url("images/image3.jpg");
+    background-size: cover;
+}
+.images4{
+    background-image: url("images/image4.jpg");
+    background-size: cover;
+}
+.images5{
+    background-image: url("images/image5.jpg");
+    background-size: cover;
+}
+.images6{
+    background-image: url("images/image6.jpg");
+    background-size: cover;
+}
+
+.bar{
+    height: 300px;
+    width: 15%;
+}
+.all-images{
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot-panel1{
+    color: white;
+    background-color: #37475A;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel2{
+    height: 400px;
+    color: white;
+    background-color:#232F3E ;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin: 10px;
+    color: #dddddd;
+
+}
+
+.foot-panel3{
+    background-color: #232F3E;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-panel4{
+    color: white;
+    background-color: #131A22;
+    height: 80px;
+    text-align: center;
+}
+
+.pages{
+    font-size: 0.7rem;
+    padding-top: 25px;
+
+}
+
+.copyright{
+    font-size: 0.7rem;
+    padding-top: 5px;
+}
