@@ -1,6 +1,18 @@
 import folium
 import pandas as pd
-m1=folium.Map(location=[23.5874,87.3814],zoom_start=7,tiles="cartodbpositron")
+m1=folium.Map(location=[23.5874,87.3814],zoom_start=6)
+
+
+# Light theme
+folium.TileLayer("cartodbpositron", name="Light Mode").add_to(m1)
+
+# Dark theme
+folium.TileLayer("cartodbdark_matter", name="Dark Mode").add_to(m1)
+
+
+
+# Add layer control toggle
+folium.LayerControl().add_to(m1)
 
 
 waste_centres = {
@@ -9,7 +21,10 @@ waste_centres = {
         ["Vishakhapatnam Solid Waste Processing Plant", 17.6868, 83.2185],
         ["Guntur Municipal Recycling Centre", 16.3067, 80.4365],
         ["Tirupati Waste Collection Centre", 13.6288, 79.4192],
-        ["Kurnool Dry Waste Collection Centre", 15.8281, 78.0373]
+        ["Kurnool Dry Waste Collection Centre", 15.8281, 78.0373],
+        ["Anantapur Municipal Waste Facility", 14.6730379495889, 77.597819057018],
+        ["Kadapa Recycling Centre", 14.4673, 78.8242],
+        ["Ongole Solid Waste Plant", 15.5057, 80.0499]
     ],
 
     "Arunachal Pradesh": [
@@ -73,6 +88,13 @@ waste_centres = {
         ["Solan Dry Waste Collection Point", 30.9045, 77.0967]
     ],
 
+    "Jammu & Kashmir": [
+    ["Saleem Scrap Shop (Srinagar)", 34.0837, 74.7973],
+    ["Kashmir Recycling Edge (Lasipora)", 33.8890, 74.9200],
+    ["VRG Recyclers (Jammu)", 32.7266, 74.8570]
+     ],
+
+
     "Jharkhand": [
         ["Ranchi Solid Waste Plant", 23.3441, 85.3096],
         ["Jamshedpur Recycling Centre", 22.8046, 86.2029],
@@ -87,7 +109,8 @@ waste_centres = {
         ["Mangaluru Recycling Facility", 12.9141, 74.8560],
         ["Belagavi Dry Waste Collection Centre", 15.8497, 74.4977],
         ["Kalaburagi Municipal Waste Yard", 17.3297, 76.8343],
-        ["Udupi Waste Processing Unit", 13.3409, 74.7421]
+        ["Udupi Waste Processing Unit", 13.3409, 74.7421],
+        ["Shivamogga Municipal Recycling Facility", 13.9299, 75.5681]
     ],
 
     "Kerala": [
@@ -97,6 +120,12 @@ waste_centres = {
         ["Thrissur Solid Waste Plant", 10.5276, 76.2144],
         ["Kannur Municipal Recycling Centre", 11.8745, 75.3704]
     ],
+     
+     "Ladakh": [
+    ["Nimoo Thang Recycling Facility (Leh)", 34.1520, 77.4820],
+    ["Choglamsar SRMC (Leh)", 34.0850, 77.5850]
+     ],
+
 
     "Madhya Pradesh": [
         ["Indore Solid Waste Management Plant", 22.7196, 75.8577],
@@ -104,7 +133,9 @@ waste_centres = {
         ["Jabalpur Waste Collection Hub", 23.1815, 79.9864],
         ["Gwalior Municipal Waste Yard", 26.2183, 78.1828],
         ["Ujjain Dry Waste Collection Centre", 23.1765, 75.7885],
-        ["Sagar Recycling Facility", 23.8388, 78.7378]
+        ["Sagar Recycling Facility", 23.8388, 78.7378],
+        ["Satna Municipal Waste Facility", 24.5820, 80.8322],   
+        ["Rewa Solid Waste Management Plant", 24.5362, 81.3030] 
     ],
 
     "Maharashtra": [
@@ -147,7 +178,9 @@ waste_centres = {
         ["Cuttack Recycling Centre", 20.4625, 85.8828],
         ["Rourkela Waste Collection Yard", 22.2604, 84.8536],
         ["Berhampur Municipal Waste Plant", 19.3149, 84.7941],
-        ["Sambalpur Dry Waste Centre", 21.4669, 83.9812]
+        ["Sambalpur Dry Waste Centre", 21.4669, 83.9812],
+        ["Satkosia (Angul) Waste Management Facility", 20.4910, 84.6490],
+        ["Balangir Municipal Waste Yard", 20.7110, 83.4870]
     ],
 
     "Punjab": [
@@ -213,7 +246,9 @@ waste_centres = {
         ["Meerut Dry Waste Collection Centre", 28.9845, 77.7064],
         ["Gorakhpur Waste Collection Centre", 26.7606, 83.3732],
         ["Noida Recycling Facility", 28.5355, 77.3910],
-        ["Bareilly Solid Waste Centre", 28.3670, 79.4304]
+        ["Bareilly Solid Waste Centre", 28.3670, 79.4304],
+        ["Mirzapur Municipal Waste Facility", 25.1449, 82.5644],
+        ["Singrauli Industrial Waste Management Plant", 24.1997, 82.6750]
     ],
 
     "Uttarakhand": [
