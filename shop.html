@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waste Management Shopping </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="shop-style.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='shop-style.css')}}">
 </head>
 <body>
     <header>
@@ -24,21 +24,19 @@
             </div>
         </div>
         <div class="navsearch border">
-            <select class="search-select">
-                <p>All</p>
-            </select>
+           
             <input placeholder="Search " class="search-input">
             <div class="search-icon">
             <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
         <div class="navacccounts border">
-         <p><span>Hello, Sign In</span></p>
-         <p class="Account">Account & Lists</p>
+         
+         <p class="Account"><a href="{{url_for('signin')}}"> Sign In</a></p>
         </div>
         <div class="navreturns border">
-        <p><span>Returns</span></p>
-         <p class="Account">&Orders</p>
+        
+         <p class="Account">Orders</p>
         </div>
         <div class="navcart border">
             <i class="fa-solid fa-cart-shopping"></i>
@@ -52,11 +50,11 @@
             All
         </div>
         <p class="border">Home- Shop Utilities</p>
-<p class="border">Training</p>
-<p class="border">Vehicle Tracking</p>
-<p class="border">Facilities Locator</p>
+<p class="border"><a href="{{url_for('module')}}">Training</a></p>
+<p class="border"><a>Vehicle Tracking </a></p>
+<p class="border"><a href="{{url_for('map')}}">Facilities Location </a></p>
 <p class="border">Report Dumping</p>
-<p class="border">Customer Support</p>
+<p class="border"><a href="{{url_for('training')}}">About Us</a></p>
 
         <div class="paneldeals border">
             Recycle Option for E-Waste
@@ -65,9 +63,7 @@
 </div>
     </header>
     <div class="herosection">
-     <div class="heromsg">
-        <p>You are on Smart Waste Management .</p>
-     </div>
+     
     </div>
 
     <div class="shop-section">
@@ -169,8 +165,7 @@
         <div class="foot-panel1">
             <p>© 2026, Smart Waste Management by Team Vision Nexus </p>
         </div>
-        <div class="foot-panel2">
-           </div>
+       
     </footer>
 </body>
 </html>
