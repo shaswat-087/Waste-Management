@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Sign In</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>SMART DIGITAL WASTE MANAGEMENT  SYSTEM</h1>
+    <p class="ehc">Reduce . Refuse . Recycle . Reuse</p>
+  </header>
+  
+   
+
+  <form method="POST" action="/calculate">
+  <div class="details">
+    <h2>Enter Details</h2>
+    
+    <label for="Username"> Username </label>
+    <input type="text" id="Username" name="Username" placeholder="Enter Name" required>
+    
+    <label for="Email"> Email ID</label>
+    <input type="email" id="Email" name="Email" placeholder="Enter Email" required>
+  </div>
+
+  
+
+
+    
+    <input class="password" type="password" name="password" placeholder="Enter Password" required><br><br>
+    <div class="type"> <span> Occupation </span>:
+    <select name="Occupation">
+      <option value="Student"> Student</option>
+      <option value="Teacher"> Teacher </option>
+      <option value="Community Worker"> Community Worker</option>
+      <option value="Other"> Other </option>
+      
+    </select><br><br>
+    </div>
+    <input class="calculate" type="submit" value="Submit">
+  </form>
+   
+  
+  
+
+  
+  <div class="footer">
+    <p>© 2026 Team  Vision Nexus</p>
+  </div>
+</body>
+</html>
