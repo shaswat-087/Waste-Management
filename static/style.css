@@ -1,0 +1,235 @@
+*{    margin: 0%;
+    padding: 0%;
+}
+body{
+    
+    background-image: url("https://img.freepik.com/premium-photo/computer-desktop-with-green-recycle-symbol-displayed-screen-surrounded-by-potted-plants-suggesting-focus-sustainability_878635-12413.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3); /* overlay color */
+  background-blend-mode: multiply; /* or overlay, darken, lighten */
+
+}
+header{
+    height: 100px;
+    background-image: url("https://tse3.mm.bing.net/th/id/OIP.1FI2_M3v0ycEUTOVNZ-nlAHaEJ?pid=Api&P=0&h=180");
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+/* .icon{
+    width: 40px;
+} */
+
+.return {
+    background-color: #ffffff;    /* white box */
+    padding: 30px 50px;
+    border-radius: 10px;          /* rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle shadow */
+    text-align: center;           /* center text inside */
+}
+
+.return h1 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.return h3 {
+    color: #555;
+}
+.return a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #3498db;   /* blue background */
+    color: #393131;                 /* white text */
+    text-decoration: none;       /* remove underline */
+    border-radius: 6px;          /* rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.return a:hover {
+    background-color: #2980b9;   /* darker blue on hover */
+    transform: scale(1.05);      /* slight zoom effect */
+}
+
+
+.loc-box{
+    margin: 20px auto;
+    padding: 15px;
+    width: 75%;
+    border: 2px solid #0077b6;
+    border-radius: 10px;
+    text-align: center;
+}
+.buttons button{
+    background: #0077b6;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.buttons button:hover{
+    background: rgb(51, 51, 201);
+}
+span{
+    display:block;
+    
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0,119,182,0.3);
+}
+.details{
+    margin-left:37.5%;
+    width: 75%;
+    margin-top:40px;
+    max-width: 500px;
+    color: white; 
+   
+}
+.password{
+    width: 75%;
+    max-width: 500px;
+    margin-left: 37.5%;
+    margin-top:20px;
+}
+
+.type {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 25%;     
+    color: white;  
+    font-size: 16px;  
+    margin: 20px auto;   
+}
+.type select {
+    width: 100%;         
+    padding: 10px;       
+    font-size: 16px;
+   
+    border-radius: 8px; 
+}
+
+.calculate{
+    width:25%;
+    margin-left: 37.5%;
+    background-color:#128fd2;
+    color: white;
+    font-size: 16px;
+}
+
+.result{
+     background: rgb(24, 172, 172);
+}
+.result:hover{
+    background: #80c3e8;
+}
+button.calc{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+border-radius: 5px;
+color: white;
+padding: 10px;
+background: #0077b6;
+
+}
+button.calc:hover{
+ background: rgb(51, 51, 201);
+}
+.result,.map,.estimation{
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.summary-hold{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 10px;
+}
+.sum-box{
+    background: #caf0f8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    height: 90%;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+
+}
+.sum-box:hover{
+    background: rgb(24, 172, 172);
+}
+.estimation{
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #caf0f8;
+    padding :15px;
+    
+
+}
+.map{
+    background: #90e0ef;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-top: 30px auto;
+    background-color:rgb(66, 66, 215);
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.recommend-btn{
+    width:25%;
+    margin-left: 37.5%;
+    background-color:#128fd2;
+    color:white;
+    font-size: 16px;
+    padding: 10px;
+    
+
+}
+.recommend-btn-disabled{
+    width:25%;
+    margin-left: 37.5%;
+    background-color:#caf0f8;
+    color:black;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+
+
