@@ -9,11 +9,13 @@ div{
     padding: 0;
 }
 .navbar{
-    color: #293535;
+    color: #eef0f0;
     height: 80px;
     padding: 10px;
     margin: 0;
-    background-color:#aaff00;
+    background-color:#479233;
+    
+    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -35,12 +37,12 @@ div{
     font-weight: 700;
 }
 .add-first{
-    color: #2a2424;
+    color: #efebeb;
     font-size: 16px;
     margin-left: 23px;
 }
 .add-sec{
-    color: #2a2424;
+    color: #edeaea;
     font-size: 20px;
     margin-left: 3px;
 }
@@ -50,15 +52,25 @@ div{
     width: 800px;
     height: 45px;
     border-radius: 4px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .search-input{
     width: 690px;
     height: 45px;
     border: none;
     font-size: 1.2rem;
+    justify-content: center;
+   
 
 }
+a:link {
+  color: rgb(236, 232, 232);
+}
+
+/* Visited link */
+a:visited {
+  color:#e2e5e7;
+} 
 
 .search-select{
     height: 45px;
@@ -89,8 +101,8 @@ span{
     font-size: 0.7rem;
 }
 .Account{
-    font-size: 0.85rem;
-    font-weight: 700;
+    font-size: 1.30rem;
+    font-weight: 600;
 }
 
 /**box6**/
@@ -106,9 +118,9 @@ span{
 /**panel**/
 .panel{
     height: 40px;
-    background-color: #ffee00;
+    background-color: #0a9603;
     display: flex;
-    color: black;
+    color: rgb(248, 244, 244);
     align-items: center;
     justify-content: space-evenly;
 }
@@ -131,9 +143,9 @@ span{
 /**hero**/
 
 .herosection{
-    background-image: url("https://tse4.mm.bing.net/th/id/OIP.N3YjF5KIooBAGFkdIBA82QHaEJ?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3");
-    width: cover;
-    height:300px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/056/428/083/non_2x/eco-friendly-concept-with-earth-symbol-amidst-green-foliage-sustainability-and-nature-design-photo.jpg") ;
+    width:cover;
+    height:600px;
     display:flex;
     justify-content: center;
     align-items: end;
