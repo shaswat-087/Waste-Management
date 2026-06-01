@@ -6,26 +6,8 @@ This project is a **web-based Waste Management System** built with **Flask (Pyth
 
 ---
 
-## ✨ Features
-- **User Registration & Sign-In**  
-  Secure form-based registration with CSV storage for user data.
-  
-- **Leaderboard**  
-  Displays top users ranked by points, with medals 🥇🥈🥉.
 
-- **Interactive Map**  
-  Built with Folium, showing waste collection and recycling centres across Indian states.
 
-- **Training & Modules**  
-  Informational pages to guide users in sustainable waste practices.
-
-- **Shopping Section**  
-  A mock e-commerce interface for waste management products (bins, compost kits, protective gear).
-
-- **Gamification**  
-  Points system motivates users to improve their rank through eco-friendly actions.
-
----
 
 ## 🛠️ Tech Stack
 - **Backend**: Python (Flask)
