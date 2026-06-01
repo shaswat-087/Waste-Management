@@ -1,8 +1,5 @@
-Here’s a rewritten **README.md** for your Waste Management project that’s clear, professional, and engaging:
 
----
-
-# 🌍 Smart Waste Management System
+#  Smart Waste Management System
 
 ## 📖 Overview
 This project is a **web-based Waste Management System** built with **Flask (Python)**, **HTML**, **CSS**, and **Pandas**. It promotes sustainable practices by gamifying waste management — users can register, earn points for eco-friendly actions, and track their progress on a leaderboard. The system also integrates an interactive map of waste facilities across India using **Folium**.
@@ -93,7 +90,3 @@ Waste-Management/
 ---
 
 ---
-
-This README now highlights the **map integration**, **shopping UI**, and **gamification system** — making the project more appealing to visitors.  
-
-Would you like me to also add **screenshots and a demo GIF/video link** so the README looks visually engaging on GitHub?
