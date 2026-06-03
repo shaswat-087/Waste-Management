@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,redirect
 import pandas as pd
 import os
 app=Flask(__name__)
@@ -65,10 +65,48 @@ def game():
         })
     return render_template('game.html', users=top_users)
 
+@app.route('/report', methods=['POST'])
+def report():
+    try:
+        users_df = pd.read_csv('users.csv')
+    except FileNotFoundError:
+        users_df = pd.DataFrame(columns=['user_id','username','email','password','occupation','points'])
+
+    username = request.form.get('username')
+    location = request.form.get('location')
+    description = request.form.get('description')
+
+    # Handle file upload
+    file = request.files['image']
+    if file and file.filename != '':
+        upload_folder = os.path.join(os.path.dirname(__file__), 'uploads')
+        os.makedirs(upload_folder, exist_ok=True)
+        filepath = os.path.join(upload_folder, file.filename)
+        file.save(filepath)
+
+    # Increment points
+    if username in users_df['username'].values:
+        users_df.loc[users_df['username'] == username, 'points'] += 10
+    else:
+        new_user = {
+            'user_id': len(users_df) + 1,
+            'username': username,
+            'email': '',
+            'password': '',
+            'occupation': '',
+            'points': 10
+        }
+        users_df = pd.concat([users_df, pd.DataFrame([new_user])], ignore_index=True)
+
+    users_df.to_csv('users.csv', index=False)
+
+    # Redirect back to leaderboard
+    return redirect('/game')
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
-    
 @app.route('/shop')
 def shop():
     return render_template('shop.html')
