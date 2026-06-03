@@ -237,16 +237,19 @@
             Help your city stay clean by reporting garbage hotspots with just a click.
         </p>
         <div class="report-container">
-            <form class="report-form">
+            <form class="report-form" method="post" enctype="multipart/form-data" action="/report">
                 <label>📸 Upload Image</label>
-                        <input type="file">
+                        <input type="file" name="image">
                 <label>📍 Location</label>
 
-                    <input type="text" placeholder="Enter location">
+                    <input type="text" name="location" placeholder="Enter location">
 
                     <label>📝 Description</label>
-                    <textarea placeholder="Describe the issue"></textarea><br>
-
+                    <textarea name="description" placeholder="Describe the issue"></textarea><br>
+                    <label> 📝 Username</label>
+                    <input type="text" name="username" placeholder="Enter your username">
+                     <label>✉️ Email ID </label>
+                     <input type="email" id="Email" name="Email" placeholder="Enter Email" required>
                     <button type="submit">✅ Submit Report</button>
             </form>
 
